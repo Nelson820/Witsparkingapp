@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:orientation="vertical"
+    tools:visibility="visible"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/wits" />
+
+        <TextView
+            android:id="@+id/student"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_below="@id/text"
+            android:background="@drawable/rounded_2"
+            android:drawableLeft="@drawable/student1"
+            android:paddingLeft="50dp"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:text="Student"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/staff"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/student"
+            android:text="Staff"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:background="@drawable/rounded_1"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/staff22"
+            android:paddingLeft="50dp"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

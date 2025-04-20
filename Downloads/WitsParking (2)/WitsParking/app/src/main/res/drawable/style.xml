@@ -1,0 +1,6 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <style name="CustomBottomNavigationItem" parent="Widget.Design.BottomNavigationView">
+        <item name="android:padding">8dp</item> <!-- Adjust spacing as needed -->
+    </style>
+</resources>

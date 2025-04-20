@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity1">
+
+
+    <!--Login Section-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:id="@+id/loginSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <!--Login text with a account circle-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="60dp"
+                app:layout_constraintBottom_toTopOf="@+id/loginSection"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="1dp"
+                    android:paddingLeft="5dp"
+                    app:srcCompat="@drawable/car">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/wits"
+                    android:layout_width="45dp"
+                    android:layout_height="50dp"
+                    android:textColor="#000000"
+                    android:paddingTop="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Wits"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:paddingLeft="2dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="15dp"
+                    android:text="Parking."
+                    android:textColor="#1E90FF"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/parking_logo" />
+
+            <!--Username-->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Student/Staff Email"
+                android:inputType="text"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rounded_border"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/custom_button"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="Login" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/loginSection"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do not have An Account?"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/move"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Create Account"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:onClick="Create"
+                    android:textColor="#1E90FF"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

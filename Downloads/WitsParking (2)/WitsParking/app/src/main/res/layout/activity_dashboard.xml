@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    tools:context=".Dashboard">
+
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/log_out"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Staff"
+        android:textSize="40sp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_b3"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp">
+
+
+        <TextView
+            android:id="@+id/Bookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="200dp"
+            android:text="Your Bookings"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/Spot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/Bookings"
+            tools:ignore="InvalidId">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Spot2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/Selected"
+            tools:ignore="InvalidId">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:text="Leaving"
+            android:textColor="@color/white"
+            android:onClick="cancel"
+            app:layout_constraintTop_toBottomOf="@+id/Selected" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:text="Cancel Booking"
+            android:textColor="@color/white"
+            android:onClick="cancel"
+            app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="616dp"
+        android:background="@drawable/custom_button"
+        android:text="Book"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="test2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:text="Go to spot"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="Gotospot"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
